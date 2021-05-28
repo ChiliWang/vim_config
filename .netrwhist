@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/home/chiliwang/mtk/hk_mb1100'
+let g:netrw_dirhist_2='/home/chiliwang/mtk/hk_mb1100/src'
+let g:netrw_dirhist_3='/home/chiliwang/mtk/hk_mb1100/src/harman-aud'
+let g:netrw_dirhist_4='/home/chiliwang/.vim'
+let g:netrw_dirhist_5='/home/chiliwang/mtk/hk_mb1100/src/harman-aud'
+let g:netrw_dirhist_6='/home/chiliwang'
+let g:netrw_dirhist_7='/home/chiliwang/.vim'
+let g:netrw_dirhist_8='/home/chiliwang/mtk/hk_mb1100/src/harman-aud'
