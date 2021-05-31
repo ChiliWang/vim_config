@@ -1,24 +1,6 @@
 " This line should not be removed as it ensures that various options are
 " properly set to work with the Vim-related packages available in 
 
-""""""""""""""""""""""""""""""""""""""""""height ligth cusor""""""""""""""""""""""""""
-
-	set cursorline
-	highlight CursorLine cterm=none ctermbg=236
-	highlight CursorColumn cterm=none ctermbg=236 
-	
-	highlight Pmenu guibg=brown gui=bold
-	highlight CursorLine cterm=none ctermbg=236
-	highlight CursorColumn cterm=none ctermbg=236
-	color elflord
-	colorscheme evening
-
-	set relativenumber
-	hi PmenuSel ctermbg=lightblue
-	set background=dark
-	"""""""""""""""""vim completer me"""""""""""""""""
-	autocmd FileType vim let b:vcm_tab_complete = 'vim'
-	setlocal complete=.,w,b,u,t
 
 " Uncomment the next line to make Vim more Vi-compatible
 " NOTE: debian.vim sets 'nocompatible'. Setting 'compatible' changes numerous
@@ -122,7 +104,7 @@ imap <F4> <ESC>: cscope -Rbkq; cs add cscope.out <CR><CR><CR> :cs reset<CR>
 "f: 查找并打开文件，类似vim的find功能
 "i: 查找包含本文件的文
 "将:cs find c等Cscope查找命令映射为<C-_>c等快捷键（按法是先按Ctrl+Shift+-, 然后很快再按下c）
-nmap <C-I> :cs find s <C-R>=expand("<cword>")<CR><CR>
+nmap <C-M> :cs find s <C-R>=expand("<cword>")<CR><CR>
 nmap <C-G> :cs find g <C-R>=expand("<cword>")<CR><CR>
 nmap <C-H> :cs find d <C-R>=expand("<cword>")<CR><CR> :copen<CR><CR>
 nmap <C-C> :cs find c <C-R>=expand("<cword>")<CR><CR> :copen<CR><CR>
@@ -399,3 +381,24 @@ let mapleader=","
 	""""""""""""""""" disable omini """""""""""""""""
 	filetype plugin off
     set omnifunc=
+
+
+
+""""""""""""""""""""""""""""""""""""""""""hight ligth cusor""""""""""""""""""""""""""
+
+	set cursorline
+	highlight CursorLine cterm=none ctermbg=236
+	highlight CursorColumn cterm=none ctermbg=236 
+	
+	highlight Pmenu guibg=brown gui=bold
+	highlight CursorLine cterm=none ctermbg=236
+	highlight CursorColumn cterm=none ctermbg=236
+	color elflord
+	colorscheme evening
+
+	set relativenumber
+	set background=dark
+	hi PmenuSel ctermbg=lightblue
+	"""""""""""""""""vim completer me"""""""""""""""""
+	autocmd FileType vim let b:vcm_tab_complete = 'vim'
+	setlocal complete=.,w,b,u,t
